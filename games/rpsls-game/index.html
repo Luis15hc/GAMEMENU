@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors-Lizard-Spock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Rock, Paper, Scissors, Lizard, Spock</h1>
+
+        <!-- Game Choices Section -->
+        <div class="choices">
+            <button id="rock" class="choice-btn"><img src="assets/images/rock.png" alt="Rock"></button>
+            <button id="paper" class="choice-btn"><img src="assets/images/paper.png" alt="Paper"></button>
+            <button id="scissors" class="choice-btn"><img src="assets/images/scissors.png" alt="Scissors"></button>
+            <button id="lizard" class="choice-btn"><img src="assets/images/lizard.png" alt="Lizard"></button>
+            <button id="spock" class="choice-btn"><img src="assets/images/spock.png" alt="Spock"></button>
+        </div>
+
+        <!-- Result Section -->
+        <div class="result">
+            <p id="user-choice">Your Choice: <span id="user-choice-text">None</span></p>
+            <div id="machine-choice-container">
+                <p id="machine-choice">Machine's Choice: <span id="machine-choice-text">None</span></p>
+                <img id="machine-choice-image" src="" alt="Machine's Choice" class="choice-image" style="display:none;">
+            </div>
+            <p id="result-text">Result: <span id="result-message">Make a choice!</span></p>
+        </div>
+
+        <!-- Controls Section -->
+        <div class="controls">
+            <!-- Reset Button -->
+            <button id="reset-btn" class="control-btn">Reset Game</button>
+            
+            <!-- Go Back to Menu Button -->
+            <button id="menu-btn" class="control-btn">Go Back to Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

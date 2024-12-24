@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; 
+    color: #FFD700; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px); /* Adjusts columns size */
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.game-item {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #FFD700; /* Yellow Border */
+    border-radius: 10px;
+    background-color: #1B1B1B; /* Dark Grey */
+}
+
+.game-preview {
+    position: relative;
+}
+
+.game-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 0, 0.7); /* Overlay Neon Yellow */
+    color: #000; /* Dark Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1; /* Overlay Over Content */
+}
+
+.game-item:hover .game-overlay {
+    opacity: 1;
+}
+
+.game-item a {
+    position: relative;
+    display: block;
+    padding: 10px;
+    background-color: #FFD700; /* Yellow Background */
+    color: #000; /* Black Text */
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+    font-size: 16px;
+    z-index: 2; /* Link over the Overlay */
+}
+
+.game-item a:hover {
+    background-color: #FFC107; /* Lighter yellow while hovering with mouse */
+}

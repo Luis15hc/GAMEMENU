@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Negro de fondo */
+    color: #FFD700; /* Amarillo texto */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #1B1B1B; /* Gris oscuro */
+    color: #FFD700; /* Amarillo texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #FFD700; /* Amarillo borde */
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #333; /* Gris más oscuro al pasar el mouse */
+}
+
+.status {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FFD700; /* Amarillo fondo */
+    color: #000; /* Negro texto */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #FFC107; /* Amarillo más claro al pasar el mouse */
+}
